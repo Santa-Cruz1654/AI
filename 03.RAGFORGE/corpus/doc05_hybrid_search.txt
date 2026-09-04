@@ -1,0 +1,8 @@
+Hybrid Search
+Hybrid search combines lexical retrieval (like BM25) with dense vector
+retrieval, merging their result sets to get both exact keyword matching and
+semantic understanding. A common approach is Reciprocal Rank Fusion (RRF),
+which combines rankings from multiple retrievers without needing to
+normalize their raw scores. Hybrid search generally outperforms either
+method alone on real-world query sets, which mix specific terms and vague
+natural-language phrasing.

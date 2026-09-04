@@ -1,0 +1,7 @@
+Training Data Poisoning
+Data poisoning attacks corrupt a model's training or fine-tuning data so
+that the resulting model behaves incorrectly or maliciously under specific
+trigger conditions, while behaving normally otherwise. In RAG systems, a
+related risk is corpus poisoning, where an attacker inserts crafted
+documents into the retrieval corpus itself so that they get retrieved and
+influence the model's output, without ever touching the model's weights.

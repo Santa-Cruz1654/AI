@@ -1,0 +1,7 @@
+RAG Architecture Overview
+Retrieval-Augmented Generation combines a retrieval system with a language
+model: relevant documents are fetched from a corpus based on the query, then
+passed to the LLM as context alongside the question. This grounds the
+model's answers in the retrieved evidence and reduces hallucination compared
+to relying purely on the model's parametric knowledge. Retrieval quality is
+usually the dominant factor in overall RAG system quality.

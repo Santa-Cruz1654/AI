@@ -1,0 +1,7 @@
+Container Image Scanning
+Scanning container images for known vulnerabilities (CVEs) in their base
+image and installed packages should happen before deployment, typically as
+part of the CI/CD pipeline. Image scanning tools compare installed package
+versions against vulnerability databases and can block a build from being
+pushed to a registry if it contains packages above a configured severity
+threshold, catching vulnerable dependencies before they reach production.

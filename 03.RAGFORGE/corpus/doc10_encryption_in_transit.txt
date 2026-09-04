@@ -1,0 +1,7 @@
+Encryption in Transit
+Encryption in transit protects data as it moves between systems, typically
+via TLS. It prevents on-path attackers from reading or tampering with data
+crossing a network, including internal traffic between microservices.
+Modern security baselines require TLS 1.2 or higher and disable weak cipher
+suites, since older protocol versions have known cryptographic weaknesses
+that can be exploited to decrypt traffic.

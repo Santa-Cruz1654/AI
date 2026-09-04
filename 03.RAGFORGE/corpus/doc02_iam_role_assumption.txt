@@ -1,0 +1,7 @@
+Role Assumption and Temporary Credentials
+Cloud providers allow identities to assume roles, receiving short-lived
+temporary credentials instead of long-lived access keys. This reduces the
+blast radius of credential leakage because assumed-role sessions expire
+automatically, often within an hour. Role assumption is also the basis for
+cross-account access patterns, where a trusted account is granted permission
+to assume a role in another account without sharing static secrets.

@@ -1,0 +1,8 @@
+Centralized Logging and Detection
+Centralized logging aggregates logs from across cloud services, applications,
+and infrastructure into a single searchable system, which is a prerequisite
+for effective detection. Detection rules and alerts are only as good as the
+log coverage feeding them; a common gap is missing data-plane logs (like
+object-level S3 access), which leaves entire categories of malicious
+activity invisible to the security team despite control-plane logging being
+enabled.

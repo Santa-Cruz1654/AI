@@ -1,0 +1,7 @@
+Vector Database Indexing (HNSW)
+Approximate nearest neighbor search in vector databases commonly uses HNSW
+(Hierarchical Navigable Small World) graphs, which trade a small amount of
+recall for large gains in query speed compared to exact nearest neighbor
+search. HNSW builds multiple layers of proximity graphs, allowing search to
+start coarse at the top layer and refine at lower layers, making it
+practical to query millions of vectors in milliseconds.

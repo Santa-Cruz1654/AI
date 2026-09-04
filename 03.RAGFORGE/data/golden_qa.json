@@ -1,0 +1,77 @@
+[
+    {
+      "id": "q01",
+      "question": "What does HNSW stand for and how does it work?",
+      "relevant_docs": ["doc13_vector_db_indexing.txt"]
+    },
+    {
+      "id": "q02",
+      "question": "What is a CMK in the context of encryption at rest?",
+      "relevant_docs": ["doc09_encryption_at_rest.txt"]
+    },
+    {
+      "id": "q03",
+      "question": "What are the k1 and b parameters used for?",
+      "relevant_docs": ["doc03_bm25_ranking.txt"]
+    },
+    {
+      "id": "q04",
+      "question": "What is RRF and when is it used?",
+      "relevant_docs": ["doc05_hybrid_search.txt"]
+    },
+    {
+      "id": "q05",
+      "question": "How can a company make sure old employees or leaked keys can't do damage for very long?",
+      "relevant_docs": ["doc02_iam_role_assumption.txt", "doc15_secrets_management.txt"]
+    },
+    {
+      "id": "q06",
+      "question": "If a chatbot reads a webpage and the webpage tricks it into ignoring its instructions, what is that called?",
+      "relevant_docs": ["doc11_prompt_injection.txt"]
+    },
+    {
+      "id": "q07",
+      "question": "Why might grounding an AI's answers in fetched evidence reduce it making things up?",
+      "relevant_docs": ["doc12_rag_architecture.txt"]
+    },
+    {
+      "id": "q08",
+      "question": "What's the risk of trusting a firewall perimeter as the main line of defense?",
+      "relevant_docs": ["doc14_zero_trust_architecture.txt"]
+    },
+    {
+      "id": "q09",
+      "question": "What is the difference between lexical and semantic document retrieval?",
+      "relevant_docs": ["doc03_bm25_ranking.txt", "doc04_dense_embeddings.txt"]
+    },
+    {
+      "id": "q10",
+      "question": "How do you avoid returning five near-identical passages from the same document section?",
+      "relevant_docs": ["doc06_mmr_diversity.txt"]
+    },
+    {
+      "id": "q11",
+      "question": "Why would you rerank a small shortlist instead of scoring the whole corpus with a cross-encoder directly?",
+      "relevant_docs": ["doc07_cross_encoder_reranking.txt"]
+    },
+    {
+      "id": "q12",
+      "question": "What cloud misconfiguration commonly leads to publicly exposed data?",
+      "relevant_docs": ["doc08_s3_bucket_misconfig.txt"]
+    },
+    {
+      "id": "q13",
+      "question": "What is corpus poisoning in a retrieval-augmented system?",
+      "relevant_docs": ["doc16_llm_data_poisoning.txt"]
+    },
+    {
+      "id": "q14",
+      "question": "What should happen to a container image before it's deployed to catch known vulnerabilities?",
+      "relevant_docs": ["doc17_container_image_scanning.txt"]
+    },
+    {
+      "id": "q15",
+      "question": "Why can an organization have control-plane logs enabled but still miss malicious activity?",
+      "relevant_docs": ["doc18_logging_and_detection.txt"]
+    }
+  ]

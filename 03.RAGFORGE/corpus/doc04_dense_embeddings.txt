@@ -1,0 +1,7 @@
+Dense Retrieval with Embeddings
+Dense retrieval encodes both queries and documents into fixed-length vectors
+using a neural encoder, then ranks documents by vector similarity (usually
+cosine similarity). Unlike BM25, dense retrieval captures semantic meaning,
+so a query can match a relevant passage even if it shares no exact words
+with it. The tradeoff is that dense retrieval can sometimes miss exact
+keyword matches, such as specific error codes, product names, or IDs.

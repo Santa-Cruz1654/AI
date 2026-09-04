@@ -1,0 +1,8 @@
+Prompt Injection
+Prompt injection is an attack where malicious input is crafted to override
+or manipulate an LLM's intended instructions, often by embedding hidden
+commands inside content the model processes, such as a webpage or document.
+Indirect prompt injection is especially dangerous in RAG systems, since
+retrieved documents become part of the model's context and can carry
+attacker-controlled instructions that the model may follow unless the
+system is designed to treat retrieved content as untrusted data.

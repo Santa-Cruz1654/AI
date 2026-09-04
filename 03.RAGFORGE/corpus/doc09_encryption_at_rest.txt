@@ -1,0 +1,7 @@
+Encryption at Rest
+Encryption at rest protects stored data by encrypting it on disk, so that
+someone with access to the underlying storage medium cannot read the data
+without the decryption key. Cloud providers typically offer both
+provider-managed keys and customer-managed keys (CMK); using CMKs gives the
+customer control over key rotation and revocation, which matters for
+compliance requirements like key destruction on data deletion.

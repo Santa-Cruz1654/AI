@@ -1,0 +1,8 @@
+Cross-Encoder Reranking
+A cross-encoder jointly encodes a query and a candidate document in a single
+forward pass, allowing it to model fine-grained interactions between them.
+This makes cross-encoders far more accurate than bi-encoder dense retrieval
+for relevance judgment, but also much slower, since every query-document
+pair must be scored individually. In practice, cross-encoders are used to
+rerank a small shortlist (e.g. top 20-50) retrieved cheaply by a bi-encoder
+or BM25 first.

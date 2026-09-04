@@ -1,0 +1,7 @@
+S3 Bucket Misconfiguration
+Publicly accessible storage buckets remain one of the most common cloud
+misconfigurations leading to data breaches. Default bucket policies should
+deny public access, and organizations should enable account-level Block
+Public Access settings as a safety net against accidental exposure. Bucket
+policies and ACLs should be audited regularly, since a single overly
+permissive policy statement can expose an entire dataset.

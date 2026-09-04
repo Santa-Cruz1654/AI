@@ -1,0 +1,7 @@
+Maximal Marginal Relevance (MMR)
+MMR is a re-ranking technique that balances relevance to the query against
+redundancy among the selected results. It iteratively picks the next
+document that maximizes relevance minus similarity to already-selected
+documents, controlled by a lambda parameter. MMR is used to avoid returning
+five near-duplicate chunks from the same section of a document, improving
+the diversity of context passed to a downstream LLM.

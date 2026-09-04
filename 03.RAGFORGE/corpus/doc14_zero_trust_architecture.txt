@@ -1,0 +1,8 @@
+Zero Trust Architecture
+Zero trust assumes no implicit trust based on network location; every
+request must be authenticated and authorized regardless of whether it
+originates inside or outside the traditional network perimeter. This
+contrasts with older perimeter-based security models where anything inside
+the firewall was implicitly trusted. Zero trust typically relies on strong
+identity verification, device posture checks, and fine-grained
+policy-based access control for every request.

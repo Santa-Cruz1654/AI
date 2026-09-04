@@ -1,0 +1,773 @@
+{
+  "summary": [
+    {
+      "config": "BM25-only",
+      "k": 5,
+      "mean_precision_at_k": 0.227,
+      "mean_recall_at_k": 1.0
+    },
+    {
+      "config": "Dense-only",
+      "k": 5,
+      "mean_precision_at_k": 0.227,
+      "mean_recall_at_k": 1.0
+    },
+    {
+      "config": "Hybrid+MMR+Rerank",
+      "k": 5,
+      "mean_precision_at_k": 0.227,
+      "mean_recall_at_k": 1.0
+    }
+  ],
+  "details": {
+    "BM25-only": [
+      {
+        "id": "q01",
+        "question": "What does HNSW stand for and how does it work?",
+        "relevant_docs": [
+          "doc13_vector_db_indexing.txt"
+        ],
+        "retrieved_docs": [
+          "doc03_bm25_ranking.txt",
+          "doc13_vector_db_indexing.txt",
+          "doc17_container_image_scanning.txt",
+          "doc09_encryption_at_rest.txt",
+          "doc14_zero_trust_architecture.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q02",
+        "question": "What is a CMK in the context of encryption at rest?",
+        "relevant_docs": [
+          "doc09_encryption_at_rest.txt"
+        ],
+        "retrieved_docs": [
+          "doc09_encryption_at_rest.txt",
+          "doc06_mmr_diversity.txt",
+          "doc13_vector_db_indexing.txt",
+          "doc11_prompt_injection.txt",
+          "doc15_secrets_management.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q03",
+        "question": "What are the k1 and b parameters used for?",
+        "relevant_docs": [
+          "doc03_bm25_ranking.txt"
+        ],
+        "retrieved_docs": [
+          "doc03_bm25_ranking.txt",
+          "doc01_iam_least_privilege.txt",
+          "doc18_logging_and_detection.txt",
+          "doc07_cross_encoder_reranking.txt",
+          "doc12_rag_architecture.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q04",
+        "question": "What is RRF and when is it used?",
+        "relevant_docs": [
+          "doc05_hybrid_search.txt"
+        ],
+        "retrieved_docs": [
+          "doc15_secrets_management.txt",
+          "doc03_bm25_ranking.txt",
+          "doc05_hybrid_search.txt",
+          "doc06_mmr_diversity.txt",
+          "doc11_prompt_injection.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q05",
+        "question": "How can a company make sure old employees or leaked keys can't do damage for very long?",
+        "relevant_docs": [
+          "doc02_iam_role_assumption.txt",
+          "doc15_secrets_management.txt"
+        ],
+        "retrieved_docs": [
+          "doc02_iam_role_assumption.txt",
+          "doc15_secrets_management.txt",
+          "doc09_encryption_at_rest.txt",
+          "doc17_container_image_scanning.txt",
+          "doc04_dense_embeddings.txt"
+        ],
+        "precision_at_k": 0.4,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q06",
+        "question": "If a chatbot reads a webpage and the webpage tricks it into ignoring its instructions, what is that called?",
+        "relevant_docs": [
+          "doc11_prompt_injection.txt"
+        ],
+        "retrieved_docs": [
+          "doc11_prompt_injection.txt",
+          "doc04_dense_embeddings.txt",
+          "doc16_llm_data_poisoning.txt",
+          "doc17_container_image_scanning.txt",
+          "doc15_secrets_management.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q07",
+        "question": "Why might grounding an AI's answers in fetched evidence reduce it making things up?",
+        "relevant_docs": [
+          "doc12_rag_architecture.txt"
+        ],
+        "retrieved_docs": [
+          "doc12_rag_architecture.txt",
+          "doc13_vector_db_indexing.txt",
+          "doc16_llm_data_poisoning.txt",
+          "doc11_prompt_injection.txt",
+          "doc03_bm25_ranking.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q08",
+        "question": "What's the risk of trusting a firewall perimeter as the main line of defense?",
+        "relevant_docs": [
+          "doc14_zero_trust_architecture.txt"
+        ],
+        "retrieved_docs": [
+          "doc14_zero_trust_architecture.txt",
+          "doc16_llm_data_poisoning.txt",
+          "doc11_prompt_injection.txt",
+          "doc12_rag_architecture.txt",
+          "doc06_mmr_diversity.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q09",
+        "question": "What is the difference between lexical and semantic document retrieval?",
+        "relevant_docs": [
+          "doc03_bm25_ranking.txt",
+          "doc04_dense_embeddings.txt"
+        ],
+        "retrieved_docs": [
+          "doc03_bm25_ranking.txt",
+          "doc05_hybrid_search.txt",
+          "doc07_cross_encoder_reranking.txt",
+          "doc04_dense_embeddings.txt",
+          "doc12_rag_architecture.txt"
+        ],
+        "precision_at_k": 0.4,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q10",
+        "question": "How do you avoid returning five near-identical passages from the same document section?",
+        "relevant_docs": [
+          "doc06_mmr_diversity.txt"
+        ],
+        "retrieved_docs": [
+          "doc06_mmr_diversity.txt",
+          "doc03_bm25_ranking.txt",
+          "doc11_prompt_injection.txt",
+          "doc12_rag_architecture.txt",
+          "doc07_cross_encoder_reranking.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q11",
+        "question": "Why would you rerank a small shortlist instead of scoring the whole corpus with a cross-encoder directly?",
+        "relevant_docs": [
+          "doc07_cross_encoder_reranking.txt"
+        ],
+        "retrieved_docs": [
+          "doc07_cross_encoder_reranking.txt",
+          "doc02_iam_role_assumption.txt",
+          "doc12_rag_architecture.txt",
+          "doc03_bm25_ranking.txt",
+          "doc15_secrets_management.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q12",
+        "question": "What cloud misconfiguration commonly leads to publicly exposed data?",
+        "relevant_docs": [
+          "doc08_s3_bucket_misconfig.txt"
+        ],
+        "retrieved_docs": [
+          "doc08_s3_bucket_misconfig.txt",
+          "doc13_vector_db_indexing.txt",
+          "doc09_encryption_at_rest.txt",
+          "doc01_iam_least_privilege.txt",
+          "doc18_logging_and_detection.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q13",
+        "question": "What is corpus poisoning in a retrieval-augmented system?",
+        "relevant_docs": [
+          "doc16_llm_data_poisoning.txt"
+        ],
+        "retrieved_docs": [
+          "doc12_rag_architecture.txt",
+          "doc16_llm_data_poisoning.txt",
+          "doc11_prompt_injection.txt",
+          "doc18_logging_and_detection.txt",
+          "doc04_dense_embeddings.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q14",
+        "question": "What should happen to a container image before it's deployed to catch known vulnerabilities?",
+        "relevant_docs": [
+          "doc17_container_image_scanning.txt"
+        ],
+        "retrieved_docs": [
+          "doc17_container_image_scanning.txt",
+          "doc08_s3_bucket_misconfig.txt",
+          "doc15_secrets_management.txt",
+          "doc12_rag_architecture.txt",
+          "doc10_encryption_in_transit.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q15",
+        "question": "Why can an organization have control-plane logs enabled but still miss malicious activity?",
+        "relevant_docs": [
+          "doc18_logging_and_detection.txt"
+        ],
+        "retrieved_docs": [
+          "doc18_logging_and_detection.txt",
+          "doc11_prompt_injection.txt",
+          "doc04_dense_embeddings.txt",
+          "doc10_encryption_in_transit.txt",
+          "doc03_bm25_ranking.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      }
+    ],
+    "Dense-only": [
+      {
+        "id": "q01",
+        "question": "What does HNSW stand for and how does it work?",
+        "relevant_docs": [
+          "doc13_vector_db_indexing.txt"
+        ],
+        "retrieved_docs": [
+          "doc13_vector_db_indexing.txt",
+          "doc03_bm25_ranking.txt",
+          "doc06_mmr_diversity.txt",
+          "doc02_iam_role_assumption.txt",
+          "doc07_cross_encoder_reranking.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q02",
+        "question": "What is a CMK in the context of encryption at rest?",
+        "relevant_docs": [
+          "doc09_encryption_at_rest.txt"
+        ],
+        "retrieved_docs": [
+          "doc09_encryption_at_rest.txt",
+          "doc10_encryption_in_transit.txt",
+          "doc15_secrets_management.txt",
+          "doc06_mmr_diversity.txt",
+          "doc11_prompt_injection.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q03",
+        "question": "What are the k1 and b parameters used for?",
+        "relevant_docs": [
+          "doc03_bm25_ranking.txt"
+        ],
+        "retrieved_docs": [
+          "doc03_bm25_ranking.txt",
+          "doc06_mmr_diversity.txt",
+          "doc09_encryption_at_rest.txt",
+          "doc02_iam_role_assumption.txt",
+          "doc04_dense_embeddings.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q04",
+        "question": "What is RRF and when is it used?",
+        "relevant_docs": [
+          "doc05_hybrid_search.txt"
+        ],
+        "retrieved_docs": [
+          "doc05_hybrid_search.txt",
+          "doc03_bm25_ranking.txt",
+          "doc06_mmr_diversity.txt",
+          "doc09_encryption_at_rest.txt",
+          "doc02_iam_role_assumption.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q05",
+        "question": "How can a company make sure old employees or leaked keys can't do damage for very long?",
+        "relevant_docs": [
+          "doc02_iam_role_assumption.txt",
+          "doc15_secrets_management.txt"
+        ],
+        "retrieved_docs": [
+          "doc15_secrets_management.txt",
+          "doc02_iam_role_assumption.txt",
+          "doc09_encryption_at_rest.txt",
+          "doc16_llm_data_poisoning.txt",
+          "doc08_s3_bucket_misconfig.txt"
+        ],
+        "precision_at_k": 0.4,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q06",
+        "question": "If a chatbot reads a webpage and the webpage tricks it into ignoring its instructions, what is that called?",
+        "relevant_docs": [
+          "doc11_prompt_injection.txt"
+        ],
+        "retrieved_docs": [
+          "doc11_prompt_injection.txt",
+          "doc16_llm_data_poisoning.txt",
+          "doc03_bm25_ranking.txt",
+          "doc04_dense_embeddings.txt",
+          "doc18_logging_and_detection.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q07",
+        "question": "Why might grounding an AI's answers in fetched evidence reduce it making things up?",
+        "relevant_docs": [
+          "doc12_rag_architecture.txt"
+        ],
+        "retrieved_docs": [
+          "doc12_rag_architecture.txt",
+          "doc04_dense_embeddings.txt",
+          "doc18_logging_and_detection.txt",
+          "doc16_llm_data_poisoning.txt",
+          "doc11_prompt_injection.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q08",
+        "question": "What's the risk of trusting a firewall perimeter as the main line of defense?",
+        "relevant_docs": [
+          "doc14_zero_trust_architecture.txt"
+        ],
+        "retrieved_docs": [
+          "doc14_zero_trust_architecture.txt",
+          "doc10_encryption_in_transit.txt",
+          "doc18_logging_and_detection.txt",
+          "doc17_container_image_scanning.txt",
+          "doc02_iam_role_assumption.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q09",
+        "question": "What is the difference between lexical and semantic document retrieval?",
+        "relevant_docs": [
+          "doc03_bm25_ranking.txt",
+          "doc04_dense_embeddings.txt"
+        ],
+        "retrieved_docs": [
+          "doc03_bm25_ranking.txt",
+          "doc05_hybrid_search.txt",
+          "doc04_dense_embeddings.txt",
+          "doc12_rag_architecture.txt",
+          "doc06_mmr_diversity.txt"
+        ],
+        "precision_at_k": 0.4,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q10",
+        "question": "How do you avoid returning five near-identical passages from the same document section?",
+        "relevant_docs": [
+          "doc06_mmr_diversity.txt"
+        ],
+        "retrieved_docs": [
+          "doc12_rag_architecture.txt",
+          "doc06_mmr_diversity.txt",
+          "doc04_dense_embeddings.txt",
+          "doc07_cross_encoder_reranking.txt",
+          "doc03_bm25_ranking.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q11",
+        "question": "Why would you rerank a small shortlist instead of scoring the whole corpus with a cross-encoder directly?",
+        "relevant_docs": [
+          "doc07_cross_encoder_reranking.txt"
+        ],
+        "retrieved_docs": [
+          "doc07_cross_encoder_reranking.txt",
+          "doc06_mmr_diversity.txt",
+          "doc05_hybrid_search.txt",
+          "doc04_dense_embeddings.txt",
+          "doc13_vector_db_indexing.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q12",
+        "question": "What cloud misconfiguration commonly leads to publicly exposed data?",
+        "relevant_docs": [
+          "doc08_s3_bucket_misconfig.txt"
+        ],
+        "retrieved_docs": [
+          "doc08_s3_bucket_misconfig.txt",
+          "doc15_secrets_management.txt",
+          "doc18_logging_and_detection.txt",
+          "doc02_iam_role_assumption.txt",
+          "doc16_llm_data_poisoning.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q13",
+        "question": "What is corpus poisoning in a retrieval-augmented system?",
+        "relevant_docs": [
+          "doc16_llm_data_poisoning.txt"
+        ],
+        "retrieved_docs": [
+          "doc16_llm_data_poisoning.txt",
+          "doc12_rag_architecture.txt",
+          "doc04_dense_embeddings.txt",
+          "doc11_prompt_injection.txt",
+          "doc03_bm25_ranking.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q14",
+        "question": "What should happen to a container image before it's deployed to catch known vulnerabilities?",
+        "relevant_docs": [
+          "doc17_container_image_scanning.txt"
+        ],
+        "retrieved_docs": [
+          "doc17_container_image_scanning.txt",
+          "doc16_llm_data_poisoning.txt",
+          "doc08_s3_bucket_misconfig.txt",
+          "doc11_prompt_injection.txt",
+          "doc14_zero_trust_architecture.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q15",
+        "question": "Why can an organization have control-plane logs enabled but still miss malicious activity?",
+        "relevant_docs": [
+          "doc18_logging_and_detection.txt"
+        ],
+        "retrieved_docs": [
+          "doc18_logging_and_detection.txt",
+          "doc01_iam_least_privilege.txt",
+          "doc14_zero_trust_architecture.txt",
+          "doc08_s3_bucket_misconfig.txt",
+          "doc02_iam_role_assumption.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      }
+    ],
+    "Hybrid+MMR+Rerank": [
+      {
+        "id": "q01",
+        "question": "What does HNSW stand for and how does it work?",
+        "relevant_docs": [
+          "doc13_vector_db_indexing.txt"
+        ],
+        "retrieved_docs": [
+          "doc13_vector_db_indexing.txt",
+          "doc06_mmr_diversity.txt",
+          "doc10_encryption_in_transit.txt",
+          "doc03_bm25_ranking.txt",
+          "doc16_llm_data_poisoning.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q02",
+        "question": "What is a CMK in the context of encryption at rest?",
+        "relevant_docs": [
+          "doc09_encryption_at_rest.txt"
+        ],
+        "retrieved_docs": [
+          "doc09_encryption_at_rest.txt",
+          "doc10_encryption_in_transit.txt",
+          "doc06_mmr_diversity.txt",
+          "doc15_secrets_management.txt",
+          "doc11_prompt_injection.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q03",
+        "question": "What are the k1 and b parameters used for?",
+        "relevant_docs": [
+          "doc03_bm25_ranking.txt"
+        ],
+        "retrieved_docs": [
+          "doc03_bm25_ranking.txt",
+          "doc06_mmr_diversity.txt",
+          "doc13_vector_db_indexing.txt",
+          "doc09_encryption_at_rest.txt",
+          "doc11_prompt_injection.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q04",
+        "question": "What is RRF and when is it used?",
+        "relevant_docs": [
+          "doc05_hybrid_search.txt"
+        ],
+        "retrieved_docs": [
+          "doc05_hybrid_search.txt",
+          "doc06_mmr_diversity.txt",
+          "doc13_vector_db_indexing.txt",
+          "doc10_encryption_in_transit.txt",
+          "doc17_container_image_scanning.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q05",
+        "question": "How can a company make sure old employees or leaked keys can't do damage for very long?",
+        "relevant_docs": [
+          "doc02_iam_role_assumption.txt",
+          "doc15_secrets_management.txt"
+        ],
+        "retrieved_docs": [
+          "doc15_secrets_management.txt",
+          "doc02_iam_role_assumption.txt",
+          "doc09_encryption_at_rest.txt",
+          "doc08_s3_bucket_misconfig.txt",
+          "doc14_zero_trust_architecture.txt"
+        ],
+        "precision_at_k": 0.4,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q06",
+        "question": "If a chatbot reads a webpage and the webpage tricks it into ignoring its instructions, what is that called?",
+        "relevant_docs": [
+          "doc11_prompt_injection.txt"
+        ],
+        "retrieved_docs": [
+          "doc11_prompt_injection.txt",
+          "doc09_encryption_at_rest.txt",
+          "doc16_llm_data_poisoning.txt",
+          "doc01_iam_least_privilege.txt",
+          "doc18_logging_and_detection.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q07",
+        "question": "Why might grounding an AI's answers in fetched evidence reduce it making things up?",
+        "relevant_docs": [
+          "doc12_rag_architecture.txt"
+        ],
+        "retrieved_docs": [
+          "doc12_rag_architecture.txt",
+          "doc06_mmr_diversity.txt",
+          "doc11_prompt_injection.txt",
+          "doc10_encryption_in_transit.txt",
+          "doc01_iam_least_privilege.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q08",
+        "question": "What's the risk of trusting a firewall perimeter as the main line of defense?",
+        "relevant_docs": [
+          "doc14_zero_trust_architecture.txt"
+        ],
+        "retrieved_docs": [
+          "doc14_zero_trust_architecture.txt",
+          "doc08_s3_bucket_misconfig.txt",
+          "doc11_prompt_injection.txt",
+          "doc03_bm25_ranking.txt",
+          "doc10_encryption_in_transit.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q09",
+        "question": "What is the difference between lexical and semantic document retrieval?",
+        "relevant_docs": [
+          "doc03_bm25_ranking.txt",
+          "doc04_dense_embeddings.txt"
+        ],
+        "retrieved_docs": [
+          "doc04_dense_embeddings.txt",
+          "doc05_hybrid_search.txt",
+          "doc03_bm25_ranking.txt",
+          "doc12_rag_architecture.txt",
+          "doc06_mmr_diversity.txt"
+        ],
+        "precision_at_k": 0.4,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q10",
+        "question": "How do you avoid returning five near-identical passages from the same document section?",
+        "relevant_docs": [
+          "doc06_mmr_diversity.txt"
+        ],
+        "retrieved_docs": [
+          "doc06_mmr_diversity.txt",
+          "doc07_cross_encoder_reranking.txt",
+          "doc03_bm25_ranking.txt",
+          "doc12_rag_architecture.txt",
+          "doc11_prompt_injection.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q11",
+        "question": "Why would you rerank a small shortlist instead of scoring the whole corpus with a cross-encoder directly?",
+        "relevant_docs": [
+          "doc07_cross_encoder_reranking.txt"
+        ],
+        "retrieved_docs": [
+          "doc07_cross_encoder_reranking.txt",
+          "doc06_mmr_diversity.txt",
+          "doc05_hybrid_search.txt",
+          "doc12_rag_architecture.txt",
+          "doc16_llm_data_poisoning.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q12",
+        "question": "What cloud misconfiguration commonly leads to publicly exposed data?",
+        "relevant_docs": [
+          "doc08_s3_bucket_misconfig.txt"
+        ],
+        "retrieved_docs": [
+          "doc08_s3_bucket_misconfig.txt",
+          "doc15_secrets_management.txt",
+          "doc09_encryption_at_rest.txt",
+          "doc01_iam_least_privilege.txt",
+          "doc18_logging_and_detection.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q13",
+        "question": "What is corpus poisoning in a retrieval-augmented system?",
+        "relevant_docs": [
+          "doc16_llm_data_poisoning.txt"
+        ],
+        "retrieved_docs": [
+          "doc16_llm_data_poisoning.txt",
+          "doc12_rag_architecture.txt",
+          "doc11_prompt_injection.txt",
+          "doc05_hybrid_search.txt",
+          "doc06_mmr_diversity.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q14",
+        "question": "What should happen to a container image before it's deployed to catch known vulnerabilities?",
+        "relevant_docs": [
+          "doc17_container_image_scanning.txt"
+        ],
+        "retrieved_docs": [
+          "doc17_container_image_scanning.txt",
+          "doc08_s3_bucket_misconfig.txt",
+          "doc15_secrets_management.txt",
+          "doc10_encryption_in_transit.txt",
+          "doc16_llm_data_poisoning.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      },
+      {
+        "id": "q15",
+        "question": "Why can an organization have control-plane logs enabled but still miss malicious activity?",
+        "relevant_docs": [
+          "doc18_logging_and_detection.txt"
+        ],
+        "retrieved_docs": [
+          "doc18_logging_and_detection.txt",
+          "doc08_s3_bucket_misconfig.txt",
+          "doc11_prompt_injection.txt",
+          "doc10_encryption_in_transit.txt",
+          "doc02_iam_role_assumption.txt"
+        ],
+        "precision_at_k": 0.2,
+        "recall_at_k": 1.0
+      }
+    ]
+  },
+  "extra_metrics": [
+    {
+      "config": "BM25-only",
+      "precision_at_1": 0.8,
+      "mrr": 0.889
+    },
+    {
+      "config": "Dense-only",
+      "precision_at_1": 0.933,
+      "mrr": 0.967
+    },
+    {
+      "config": "Hybrid+MMR+Rerank",
+      "precision_at_1": 1.0,
+      "mrr": 1.0
+    }
+  ]
+}

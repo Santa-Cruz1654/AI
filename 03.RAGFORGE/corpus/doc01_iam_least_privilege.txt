@@ -1,0 +1,8 @@
+Least Privilege in IAM
+The principle of least privilege means granting a user, service, or process
+only the permissions strictly necessary to perform its function, nothing
+more. In cloud IAM systems, this typically means avoiding wildcard
+permissions like Action:* or Resource:*, and instead scoping policies to
+specific actions on specific resources. Over-permissioned roles are one of
+the most common root causes of cloud breaches, since a single compromised
+credential can then be used to pivot across an entire account.

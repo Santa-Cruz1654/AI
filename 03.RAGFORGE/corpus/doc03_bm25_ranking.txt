@@ -1,0 +1,7 @@
+BM25 Ranking Function
+BM25 is a bag-of-words ranking function used by search engines to estimate
+the relevance of documents to a query. It builds on TF-IDF by adding term
+frequency saturation and document length normalization, controlled by
+parameters k1 and b. BM25 is purely lexical: it matches exact tokens and
+does not understand synonyms or semantic similarity, which is why queries
+using different wording than the source document can fail to retrieve it.
