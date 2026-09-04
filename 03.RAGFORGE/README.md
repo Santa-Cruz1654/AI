@@ -1,6 +1,6 @@
 # Hybrid Search Benchmark
 
-A rehearsal mini-project for [RAGForge](../)'s retrieval layer: compares
+A rehearsal mini-project for retrieval layer: compares
 dense-only, BM25-only, and hybrid (dense + BM25 fusion + MMR + cross-encoder
 reranking) retrieval on a small hand-curated corpus and golden Q&A set.
 
